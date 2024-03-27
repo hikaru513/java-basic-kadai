@@ -2,9 +2,12 @@ package kadai_017;
 
 public class KatoTaro_Chapter17 extends Kato_Chapter17{
 	
-	 // コンストラクタで名前を設定
+	public void setGivenName(String givenName) {
+        this.givenName = givenName;
+    }
+	// コンストラクタの追加
     public KatoTaro_Chapter17() {
-        this.givenName = "太郎";
+        setGivenName("太郎"); // ここで名前をセット
     }
 	
 
@@ -13,5 +16,5 @@ public class KatoTaro_Chapter17 extends Kato_Chapter17{
 	      System.out.println("私はJavaが得意です");
 	   }
 	
-
 }
+
