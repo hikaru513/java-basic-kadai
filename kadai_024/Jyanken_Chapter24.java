@@ -14,12 +14,20 @@ public class Jyanken_Chapter24 {
 			
 			
 			Scanner scan = new Scanner(System.in);
-		    String str = scan.next();
-		    if(!"r".equals(str) && !"s".equals(str) && !"p".equals(str)) {
-		        
-		    }
-		    
-		    return str;
+			String str;
+
+			while (true) {
+			    str = scan.next();
+			    if ("r".equals(str) || "s".equals(str) || "p".equals(str)) {
+			        // 正しい入力があった場合はループを抜ける
+			        break;
+			    } else {
+			        // 不正な入力があった場合はメッセージを出力し、再入力を求める
+			        System.out.println("不正な入力です。'r', 's', 'p'のいずれかを入力してください。");
+			    }
+			}
+
+			return str;
 		}
 
 		public String getRandom() {
@@ -54,3 +62,4 @@ public class Jyanken_Chapter24 {
 	    
 
 }
+
